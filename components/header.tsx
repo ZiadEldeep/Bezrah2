@@ -25,7 +25,7 @@ const Header = () => {
         {/* Navigation Links */}
         <ul className="flex space-x-8 text-lg">
           <li>
-            <Link href="/" className="text-white hover:text-green-300 transition-all">Homee</Link>
+            <Link href="/" className="text-white hover:text-green-300 transition-all">Home</Link>
           </li>
           <li>
             <Link href="/about" className="text-white hover:text-green-300 transition-all">About</Link>
