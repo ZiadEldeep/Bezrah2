@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { FaRegLightbulb, FaWrench, FaPaintBrush } from 'react-icons/fa'
 import { useEffect } from 'react'
 import gsap from 'gsap'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+// import Header from './components/Header'
+// import Footer from './components/Footer'
 
 const HomePage = () => {
   // Animations with GSAP
