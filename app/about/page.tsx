@@ -1,4 +1,4 @@
-'use client' // Use client-side rendering
+'use client' // Enable client-side rendering for animations
 
 import { useEffect } from 'react'
 import gsap from 'gsap'
@@ -42,7 +42,7 @@ const About = () => {
       <div className="container mx-auto text-center px-4">
         {/* Hero Section */}
         <div className="about-header">
-          <div className="relative bg-cover bg-center h-[60vh] rounded-xl" style={{ backgroundImage: 'url(/about-hero.jpg)' }}>
+          <div className="relative bg-cover bg-center h-[60vh] rounded-xl" style={{ backgroundImage: 'url(/images/about.png)' }}>
             <div className="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
             <div className="relative z-10 flex items-center justify-center text-center text-white p-12">
               <div className="max-w-2xl">
@@ -73,23 +73,20 @@ const About = () => {
           </p>
         </div>
 
-        {/* Team Section */}
+        {/* Team Section (No Images) */}
         <div className="mt-20 team-section">
           <h2 className="text-4xl font-semibold text-green-600">Meet Our Team</h2>
           <p className="mt-4 text-lg text-gray-600">Our team is made up of experienced professionals who are passionate about creating sustainable and eco-friendly roofing solutions.</p>
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="bg-white p-8 shadow-lg rounded-lg text-center">
-              <img src="/team-member1.jpg" alt="Team Member 1" className="w-32 h-32 mx-auto rounded-full mb-4"/>
               <h3 className="text-xl font-semibold">John Doe</h3>
               <p className="text-lg text-gray-600">CEO & Founder</p>
             </div>
             <div className="bg-white p-8 shadow-lg rounded-lg text-center">
-              <img src="/team-member2.jpg" alt="Team Member 2" className="w-32 h-32 mx-auto rounded-full mb-4"/>
               <h3 className="text-xl font-semibold">Jane Smith</h3>
               <p className="text-lg text-gray-600">Lead Architect</p>
             </div>
             <div className="bg-white p-8 shadow-lg rounded-lg text-center">
-              <img src="/team-member3.jpg" alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4"/>
               <h3 className="text-xl font-semibold">Alice Brown</h3>
               <p className="text-lg text-gray-600">Project Manager</p>
             </div>
@@ -102,13 +99,23 @@ const About = () => {
           <div className="mt-12 flex flex-col sm:flex-row gap-8 justify-center">
             <div className="bg-white p-8 shadow-lg rounded-lg text-center">
               <p className="italic text-lg text-gray-600">"Green Roof Solutions transformed our office roof into a beautiful green space, reducing energy costs and improving air quality!"</p>
-              <p className="mt-4 font-semibold text-gray-700">Michael Johnson</p>
-              <p className="text-gray-500">Business Owner</p>
+              <div className="mt-6 flex items-center justify-center">
+                <img src="/images/avatar1.jpeg" alt="Client 1" className="w-12 h-12 rounded-full mr-4"/>
+                <div>
+                  <p className="font-semibold text-gray-700">Michael Johnson</p>
+                  <p className="text-gray-500">Business Owner</p>
+                </div>
+              </div>
             </div>
             <div className="bg-white p-8 shadow-lg rounded-lg text-center">
               <p className="italic text-lg text-gray-600">"The team at Green Roof Solutions was professional, efficient, and truly cared about sustainability. Highly recommend!"</p>
-              <p className="mt-4 font-semibold text-gray-700">Sarah Lee</p>
-              <p className="text-gray-500">Architect</p>
+              <div className="mt-6 flex items-center justify-center">
+                <img src="/images/avatar2.jpeg" alt="Client 2" className="w-12 h-12 rounded-full mr-4"/>
+                <div>
+                  <p className="font-semibold text-gray-700">Sarah Lee</p>
+                  <p className="text-gray-500">Architect</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -119,7 +126,7 @@ const About = () => {
           <p className="mt-6 text-lg max-w-3xl mx-auto">
             Contact us today and start your journey toward a greener, more sustainable future for your roof. Whether you are looking for consultation, installation, or maintenance, we are here to help.
           </p>
-          <a href="/contact" className="mt-8 inline-block bg-white text-green-800 py-3 px-8 rounded-full text-lg font-semibold hover:bg-green-100 transition-all">
+          <a href="/contact" className="mt-8 inline-block bg-white text-green-800 py-3 px-8 rounded-full text-lg font-semibold hover:bg-green-100">
             Get in Touch
           </a>
         </div>
