@@ -18,7 +18,7 @@ const Header = () => {
           />
           {/* Site Name */}
           <span className="text-4xl font-extrabold hover:text-green-300 transition-colors">
-            Green Roof Solutions
+            BEZRAH
           </span>
         </Link>
 

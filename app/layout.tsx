@@ -7,7 +7,7 @@ import Footer from '@/components/footer'
 
 export const metadata = {
   title: 'Bezra',
-  description: 'Sustainable and eco-friendly roofing solutions',
+  description: 'Sustainable and eco-friendly roofing solutions and Planting',
 }
 
 export default function RootLayout({
