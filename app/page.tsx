@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { FaRegLightbulb, FaWrench, FaPaintBrush } from 'react-icons/fa'
 import { useEffect } from 'react'
 import gsap from 'gsap'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const HomePage = () => {
   // Animations with GSAP
@@ -32,30 +34,11 @@ const HomePage = () => {
 
   return (
     <>
-      {/* Header */}
-      <header className="bg-gradient-to-r from-green-600 to-green-800 text-white py-6">
-        <nav className="container mx-auto flex justify-between items-center">
-          <Link href="/" className="text-4xl font-extrabold hover:text-green-300 transition-colors">
-            Green Roof Solutions
-          </Link>
-          <ul className="flex space-x-8 text-lg">
-            <li>
-              <Link href="/about" className="text-white hover:text-green-300 transition-all">About</Link>
-            </li>
-            <li>
-              <Link href="/services" className="text-white hover:text-green-300 transition-all">Services</Link>
-            </li>
-            <li>
-              <Link href="/contact" className="text-white hover:text-green-300 transition-all">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
 
       {/* Main Content */}
       <main>
         {/* Hero Section */}
-        <section className="relative h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/hero-image.jpg)' }}>
+        <section className="relative h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/logo.jpeg)' }}>
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <div className="container mx-auto text-center text-white relative z-10 pt-40 hero-content">
             <h1 className="text-5xl font-extrabold tracking-tight md:text-6xl">Transform Your Roof, Transform Your Future</h1>
@@ -109,13 +92,6 @@ const HomePage = () => {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-green-800 text-white py-6">
-        <div className="container mx-auto text-center">
-          <p className="text-sm">© 2024 Green Roof Solutions. All rights reserved.</p>
-          <p className="text-sm">Website by Green Roof Solutions Team</p>
-        </div>
-      </footer>
     </>
   )
 }
