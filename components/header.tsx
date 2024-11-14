@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-green-600 to-green-800 text-white py-6">
+    <header className="bg-gradient-to-r from-green-600 to-green-800 text-white py-6 px-6">
       <nav className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">

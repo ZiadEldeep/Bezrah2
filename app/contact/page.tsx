@@ -102,7 +102,12 @@ const Contact = () => {
 
           <div className="space-y-6">
             <div>
-              <p><strong className="font-semibold">Email:</strong> contact@greenroofsolutions.com</p>
+              <p>
+                <strong className="font-semibold">Email:</strong>{' '}
+                <a href="mailto:hr@bezrah.org" className="text-green-600 hover:text-green-700">
+                  hr@bezrah.org
+                </a>
+              </p>
             </div>
             <div>
               <p><strong className="font-semibold">Phone:</strong> +1 (123) 456-7890</p>
