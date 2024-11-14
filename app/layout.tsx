@@ -1,8 +1,9 @@
 // app/layout.tsx
+import Header from '@/components/header'
 import './globals.css'
 import Head from 'next/head'
-import Header from '../components/Header'  // Assuming the Header component is located here
-import Footer from '../components/Footer'  // Assuming the Footer component is located here
+import Footer from '@/components/footer'
+
 
 export const metadata = {
   title: 'Bezra',
