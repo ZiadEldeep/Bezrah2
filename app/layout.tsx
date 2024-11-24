@@ -30,7 +30,7 @@ export default function RootLayout({
         <Header />
 
         {/* Render the children (main content of each page) */}
-        <main>{children}</main>
+        <main className='mt-12'>{children}</main>
 
         {/* Add the Footer here */}
         <Footer />

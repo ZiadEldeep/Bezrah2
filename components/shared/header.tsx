@@ -3,22 +3,25 @@ import Image from 'next/image'
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-[#778976] to-[#778976] text-white py-6 px-6">
+    <header className="bg-gradient-to-r from-[#384131] to-[#778976] text-white py-3 px-6 fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           {/* Logo Image using Next.js Image component */}
           <Image 
-            src="/images/LOGO_PNG_SECOND.png" 
+            src="/images/logg.png" 
             alt="Green Roof Solutions Logo" 
-            width={196} // specify width
-            height={196} // specify height
-            className="object-contain" 
+            width={44} // specify width
+            height={44} // specify height
+            className="object-contain pt-2" 
           />
-          {/* Site Name */}
-          {/* <span className="text-2xl font-extrabold hover:text-green-300 transition-colors">
-            BEZRAH
-          </span> */}
+          <Image 
+            src="/images/remin.png" 
+            alt="Green Roof Solutions Logo" 
+            width={60} // specify width
+            height={60} // specify height
+            className="object-contain pt-2" 
+          />
         </Link>
 
         {/* Navigation Links */}
