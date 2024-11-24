@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Home = () => {
   return (
     <>
-      <header className="bg-green-800 text-white py-4">
+      {/* <header className="bg-green-800 text-white py-4">
         <nav className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold">
             Green Roof Solutions
@@ -21,10 +21,10 @@ const Home = () => {
             </li>
           </ul>
         </nav>
-      </header>
+      </header> */}
 
       <main>
-        <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/hero-image.jpg)' }}>
+        <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/COVER.png)' }}>
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="container mx-auto text-center text-white relative z-10 pt-40">
             <h1 className="text-5xl font-semibold">Welcome to Green Roof Solutions</h1>

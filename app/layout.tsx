@@ -1,8 +1,8 @@
 // app/layout.tsx
-import Header from '@/components/header'
+import Header from '@/components/shared/header'
 import './globals.css'
 import Head from 'next/head'
-import Footer from '@/components/footer'
+import Footer from '@/components/shared/footer'
 
 
 export const metadata = {
