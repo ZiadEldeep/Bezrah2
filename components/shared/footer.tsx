@@ -1,4 +1,4 @@
-// components/Footer.tsx
+// components/Footer.tsxx
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-[#384131] via-[#2a3c2f] to-[#4a6a52] text-white py-6">
